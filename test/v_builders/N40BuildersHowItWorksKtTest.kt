@@ -12,6 +12,7 @@ class N40BuildersHowItWorksKtTest {
         if (answers.values.toSet() == setOf(null)) {
             fail("Please specify your answers!")
         }
+        // Nice way of writing answers to questions ^^
         val correctAnswers = mapOf(22 - 20 to b, 1 + 3 to c, 11 - 8 to b, 79 - 78 to c)
         if (correctAnswers != answers) {
             val incorrect = (1..4).filter { answers[it] != correctAnswers[it] }
